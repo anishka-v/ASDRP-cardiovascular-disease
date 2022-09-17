@@ -50,3 +50,5 @@ axis_corr = sns.heatmap(heatMap, vmin=-1, vmax=1, center=0, cmap=sns.diverging_p
 
 plt.show()
 
+#feature distribution
+df.hist(bins=50, figsize=(20,15))
