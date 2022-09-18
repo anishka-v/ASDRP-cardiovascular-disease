@@ -13,11 +13,11 @@ X = df.loc[:, features]
 y = df.loc[:, ["cardio"]]
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0, train_size = .75)
 
-clf = RandomForestClassifier(n_estimators = 75, max_depth=15)
+clf = RandomForestClassifier(n_estimators = 75, max_depth=13)
 clf.fit(X_train, y_train.values.ravel())
-y_pred = clf.predict(X_train)
+y_pred = clf.predict(X_test)
 
-print("ACCURACY : ", metrics.accuracy_score(y_train, y_pred))
+print("ACCURACY : ", metrics.accuracy_score(y_test, y_pred))
 
 cm = confusion_matrix(y_test,y_pred)
 cm
