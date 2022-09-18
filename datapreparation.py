@@ -8,7 +8,7 @@ for dirname, _, filenames in os.walk('/kaggle/input'):
     for filename in filenames:
         print(os.path.join(dirname, filename))
         
-df = pd.read_csv("/kaggle/input/cardiovascular-disease-dataset/cardio_train.csv",  header=0, sep=";")
+df = pd.read_csv("cardio_train.csv",  header=0, sep=";")
 print (df)
 
 df.corr()
