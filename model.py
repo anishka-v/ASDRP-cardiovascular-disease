@@ -51,7 +51,7 @@ plt.xlabel("n_estimators")
 plt.show()
 
 #max depth of the tree
-max_depths = np.linspace(1, 32, 32, endpoint=True)
+max_depths = np.linspace(1, 28, 28, endpoint=True)
 train_results = []
 test_results = []
 for max_depth in max_depths:
