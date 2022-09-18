@@ -4,6 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn import metrics 
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import roc_curve, auc
+from datapreparation import * 
 
 #MODEL
 
