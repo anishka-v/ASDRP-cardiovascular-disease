@@ -8,4 +8,4 @@ The goal of this project is to analyze and predict cardiovascular diseases based
 
 **model.py**: 
 - Uses a random forest classifier to predict cardiovascular diseases
-- Finds the optimal values for the algorithms's hyperparameters
+- Finds the optimal values for the algorithm's hyperparameters
